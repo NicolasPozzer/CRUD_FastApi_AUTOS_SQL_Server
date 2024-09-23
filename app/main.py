@@ -1,10 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import autoController
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("uvicorn.error")
 
 app = FastAPI()
 
-# Configurar CORS
+# Config CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Permite todos los dominios. Cambia "*" a ["http://localhost:3000"] o el dominio específico si prefieres restringir.
@@ -13,10 +17,10 @@ app.add_middleware(
     allow_headers=["*"],  # Permite todas las cabeceras
 )
 
-# Implementar Rutas o Controllers
+# implement endpoints
 app.include_router(autoController.router)
 
-# Endpoint que devuelve un mensaje
+# endpoint test
 @app.get("/")
 def message():
     return "Hello world"

@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.10 (CRUD_SQL_Server)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (CRUD_SQL_Server)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (CRUD_FastApi_AUTOS_SQL_Server)" project-jdk-type="Python SDK" />
 </project>

@@ -1,0 +1,5 @@
+fastapi[standard]
+python-jose
+sqlalchemy
+pyodbc
+requests
